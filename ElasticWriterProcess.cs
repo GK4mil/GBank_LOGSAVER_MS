@@ -29,11 +29,10 @@ namespace LogSaverService
             var res = _ec.Index<Log>(new Log() { datetime = DateTime.Now, message = message }, x => x.Index("transactions"));
             while(!res.ApiCall.Success)
             {
-                res = _ec.Index<Log>(new Log() { datetime = DateTime.Now, message = message }, x => x.Index("transactions"));
                 Task.Delay(1000).Wait();
-                Console.WriteLine("sabotage");
+                res = _ec.Index<Log>(new Log() { datetime = DateTime.Now, message = message }, x => x.Index("transactions"));
             }
-            Console.WriteLine("sabotage");
+
             return true;
         }
 
