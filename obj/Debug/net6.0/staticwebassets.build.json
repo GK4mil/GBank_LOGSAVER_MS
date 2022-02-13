@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "19H0d9yW1Xqcl2Wm0tgZUs/deKMtz1xALgfdNzVvBoE=",
+  "Source": "LogSaverService",
+  "BasePath": "_content/LogSaverService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
